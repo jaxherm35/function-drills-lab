@@ -12,8 +12,10 @@
 */
 
 //CODE HERE
-let function helloWorld = 'Hello world'
-
+function helloWorld() {
+  console.log("Hello World")
+}
+helloWorld()
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
@@ -21,8 +23,8 @@ let function helloWorld = 'Hello world'
 */
 
 //CODE HERE
-
-
+const jsNinja = () => console.log('I am a JavaScript ninja')
+jsNinja();
 ////////////////// PROBLEM 3 ////////////////////
 /*
   Create a function called printName which takes in a person's name and console logs it.
@@ -31,7 +33,10 @@ let function helloWorld = 'Hello world'
 */
 
 //CODE HERE
-
+function printName(name){
+  console.log(name)
+}
+printName('Cameron')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -45,8 +50,11 @@ let function helloWorld = 'Hello world'
 */
 
 //CODE HERE
-
-
+function greeting(person1){
+  person1 = String(person1)
+  console.log(`Hello:${person1}`)
+}
+greeting('Jaxon')
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -59,8 +67,13 @@ let function helloWorld = 'Hello world'
 */
 
 //CODE HERE
-
-
+const compareNums = (num1, num2) => {
+  if(num1 > num2) {
+    return num1
+  }else {
+    return num2
+  }
+}
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 
@@ -70,8 +83,13 @@ let function helloWorld = 'Hello world'
 */
 
 //CODE HERE
-
-
+function add(num1,num2){
+num1 = +num1
+num2 = +num2
+return(num1 + num2) 
+}
+let sum = add(14,27)
+console.log(sum)
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
