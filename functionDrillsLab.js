@@ -347,6 +347,20 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 
+function isArraySorted(arr){
+    let checker = arr[0];
+    for(let i = 1; i < arr.length; i++){
+      if(arr[i]< checker){
+        return false;
+      } else {
+        checker = arr[i];
+      }
+    }
+  return true;
+}
+
+let arrayIsAscending = isArraySorted(sampleArray);
+console.log(arrayIsAscending)
 
 ////////////////// PROBLEM 22 ////////////////////
 
