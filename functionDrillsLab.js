@@ -243,8 +243,6 @@ console.log(oddChecker)
 */
 
 //CODE HERE
-
-
 const bestMovie = title => `${title} is the best movie ever`
 
 console.log(bestMovie)
@@ -261,7 +259,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
-
+function bigOrSmall(arr){
+  let answers = []
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] > 100){
+      answers.push('big')
+    }else{
+      answers.push('small')
+    }
+  }
+  return answers
+}
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+console.log(arrayEvaluator)
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -272,6 +282,12 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+function theEliminator(contestants, loser){
+  for(let i = 0; i < contestants.length; i++){
+
+  }
+}
+console.log(contestants)
 
 
 ////////////////// PROBLEM 17 ////////////////////
@@ -282,7 +298,9 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+const upperString = sampleString.toUpperCase()
 
+console.log(upperString)
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -294,7 +312,16 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
-
+function emailCheck(email){
+  email = String(email).trim()
+  if (email.includes('@')){
+    return 'email verified'
+  } else{
+    return 'must provide valid email'
+  }
+}
+let emailValidator = emailCheck('jaxherm35@gmail.com')
+console.log(emailValidator)
 ////////////////// PROBLEM 19 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
