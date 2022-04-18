@@ -206,7 +206,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function printAllNames(names) {
+  for(let i = 0; i < names.length; i++){
+    console.log(names[i])
+  }
+}
 
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -217,8 +223,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
-
+function thatsOdd(number) {
+  if(number % 2 === 0){
+    return 'thats not odd!'
+  }else{
+    return 'that is odd indeed!'
+  }
+}
+let oddChecker = thatsOdd(7)
+console.log(oddChecker)
 ////////////////// PROBLEM 14 ////////////////////
 
 /*
@@ -231,6 +244,10 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+
+const bestMovie = title => `${title} is the best movie ever`
+
+console.log(bestMovie)
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
