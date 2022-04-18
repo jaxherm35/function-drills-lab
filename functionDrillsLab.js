@@ -103,7 +103,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+// expression this one
 
 
 
@@ -118,7 +118,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+// arrow this one
 // declaration
 // expression
 
@@ -129,7 +129,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-
+const exlaimThree = str => `${str.toUppercase()}!!!`
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -143,7 +143,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+// declaration this one
 // expression
 
 
@@ -157,7 +157,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck(name) {
+  if(nameCheck === 'Steven'){
+    return 'Whats up Steven'
+  } else if(nameCheck === 'Brian'){
+    return 'Whats up Brain'
+  } else{
+    return  `Cool name, ${name}` 
+  }
+}
+let nameGreeting = nameCheck('Jaxon')
+console.log(nameGreeting)
 
+//why do back ticks start at beginning of statement and not just before {name} ??
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -170,6 +182,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function faveColorFinder(color){
+  if (color === 'red'){
+    return 'red is a great color'
+  }else if (color === 'green'){
+    return 'green is a solid favorite color'
+  }else if(color === 'black'){
+    return 'so trendy'
+  }else{
+    return 'you need to evaluate your favorite color choice'
+  }
+}
+let colorRating = faveColorFinder('black')
+console.log(colorRating)
 
 
 ////////////////// PROBLEM 12 ////////////////////
